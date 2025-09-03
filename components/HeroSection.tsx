@@ -115,28 +115,7 @@ const HeroSection = () => {
           </motion.a>
         </motion.div>
 
-        {/* Enhanced scroll indicator */}
-        <motion.div 
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.4, duration: 0.8 }}
-        >
-          <div className="flex flex-col items-center space-y-3">
-            <span className="text-sm text-white/70 font-medium tracking-wide">Scroll to explore</span>
-            <motion.div 
-              className="w-8 h-12 border-2 border-white/40 rounded-full flex justify-center backdrop-blur-sm"
-              animate={{ y: [0, 12, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            >
-              <motion.div 
-                className="w-1.5 h-4 bg-gradient-to-b from-white/80 to-white/40 rounded-full mt-2"
-                animate={{ y: [0, 12, 0] }}
-                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              />
-            </motion.div>
-          </div>
-        </motion.div>
+        {/* Enhanced scroll indicator - REMOVED */}
       </div>
     </section>
   )
