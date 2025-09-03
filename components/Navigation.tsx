@@ -14,9 +14,9 @@ const Navigation = () => {
       const sections = document.querySelectorAll('section[id]')
       let current = ''
       
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop
-        const sectionHeight = section.clientHeight
+      sections.forEach((section) => {
+        const sectionTop = (section as HTMLElement).offsetTop
+        const sectionHeight = (section as HTMLElement).clientHeight
         if (window.scrollY >= (sectionTop - 200)) {
           current = section.getAttribute('id') || ''
         }

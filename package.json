@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export",
+    "deploy": "npm run build",
+    "vercel": "vercel",
+    "vercel:prod": "vercel --prod"
   },
   "dependencies": {
     "next": "14.0.4",
